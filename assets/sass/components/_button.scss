@@ -79,11 +79,16 @@
 				display: none;
 			}
 		}
+		&.listing{
+			cursor: default;
+			@include vendor('pointer-events', 'none');
+
+		}
 
 		&.disabled,
 		&:disabled {
 			cursor: default;
-			opacity: 0.5;
+			opacity:0.5;
 			@include vendor('pointer-events', 'none');
 		}
 

@@ -31,6 +31,15 @@
 				width: calc(33.33333% - 2.5em);
 			}
 		}
+		&.style2 {
+			> :nth-child(2n - 1) {
+				width: calc(50% - 2.5em);
+			}
+
+			> :nth-child(2n) {
+				width: calc(50% - 2.5em);
+			}
+		}
 
 		@include breakpoint('<=xlarge') {
 			> * {
