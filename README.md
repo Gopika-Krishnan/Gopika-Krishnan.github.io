@@ -1,5 +1,5 @@
 # Portfolio
-This is the code used to create my website, which showcases the projects and research I've done!
+This is the code used to create my website, which showcases the projects and research I've done! <br>
 Check it out: https://gopika-krishnan.github.io/
 
 The website design was inspired by the following template from HTML5UP:
