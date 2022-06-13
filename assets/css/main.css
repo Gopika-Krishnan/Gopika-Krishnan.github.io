@@ -3999,10 +3999,7 @@ input, select, textarea {
 		}
 		 */
 	
-	.sticky {
-		
-	} 
-
+	
 	.collapsible {
 	
 		/* width:100%;
@@ -4010,25 +4007,25 @@ input, select, textarea {
 		top:0em;
 		position: fixed; */
 		/* width:100%; */
-		padding: 1.5em 1.5em 0.5em 2.5em ;
+		/* padding: 1.5em 1.5em 0.5em 2.5em ;
 		background: #f3ede8;
 		cursor: default;
 		height: 100vh;
 		left: 0;
 		/* overflow-x: hidden; */
 		/* overflow-y: auto; */
-		position: fixed;
+		/* position: fixed;
 		text-align: right;
 		top: 0;
 		width: 18em;
 		z-index: 1;
 		height: 3.5em;
-		left: 0;
+		left: 0; */
 		/* overflow: hidden; */
-		padding: 0;
+		/* padding: 0;
 		text-align: center;
 		top: 0;
-		width: 100%;
+		width: 100%; */
 		background-color: #f3ede8;
 		color: rosybrown;
 		cursor: pointer;
