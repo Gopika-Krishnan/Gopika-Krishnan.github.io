@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Image with Hover Effect</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .binary-image {
+            font-family: monospace;
+            color: black;
+            white-space: pre-wrap;
+            font-size: 10px;
+            display: block;
+            line-height: 8px;
+            margin: 0;
+        }
+        .image-wrapper:hover .binary-image {
+            opacity: 0;
+        }
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+        .image-wrapper:hover img {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hover to Reveal Image</h1>
+        <div class="image-wrapper">
+            <!-- Binary image placeholder -->
+            <pre class="binary-image" id="binary-image"></pre>
+            <!-- Your image -->
+            <img src="images/pic07.jpeg" alt="Headshot" id="real-image">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to generate binary image in the shape of your photo (simplified example)
+        const binaryImage = `
+        000000111100000
+        000001111110000
+        000011111111000
+        000111111111100
+        001111111111110
+        011111111111111
+        011111111111111
+        011111111111111
+        001111111111110
+        000111111111100
+        000011111111000
+        000001111110000
+        000000111100000
+        `;
+
+        // Display binary image in the shape of the face (simplified)
+        const binaryOutput = document.getElementById("binary-image");
+        binaryOutput.textContent = binaryImage;
+    </script>
+
+</body>
+</html>
