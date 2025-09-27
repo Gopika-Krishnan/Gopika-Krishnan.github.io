@@ -3939,3 +3939,51 @@ html, body {
         margin: 0; /* Remove margin from list items */
     }
 }
+/* Make project titles look like links (respect theme colors) */
+.features h3 a{
+  color: #b76e79;                 /* theme accent */
+  border-bottom: none;            /* kill global dotted underline */
+  text-decoration: underline;     /* always visible */
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Hover/focus states – subtle, still on-brand */
+.features h3 a:hover,
+.features h3 a:focus-visible{
+  color: #a45c66;                 /* slightly darker accent */
+  text-decoration-color: #a45c66;
+  outline: 3px solid rgba(183,110,121,0.25);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Optional: visited color so clicked links still look like links */
+.features h3 a:visited{
+  color: #8f4f58;
+  text-decoration-color: #8f4f58;
+}
+/* Faster icon hover snap */
+.features .icon.major{
+  background: #ffffff;
+  color: #b76e79;
+  border: 2px solid #b76e79;
+  /* quicker transition so it returns fast */
+  transition: transform 0.08s ease-out, box-shadow 0.08s ease-out,
+              color 0.08s ease-out, border-color 0.08s ease-out;
+}
+
+.features section:hover .icon.major,
+.features section:focus-within .icon.major{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  color: #a45c66;
+  border-color: #a45c66;
+}
+.features .icon.major{
+  transition: none;
+}
+.features section:hover .icon.major,
+.features section:focus-within .icon.major{
+  transition: transform 0.08s ease-out, box-shadow 0.08s ease-out;
+}
